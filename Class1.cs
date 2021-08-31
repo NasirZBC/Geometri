@@ -6,11 +6,25 @@ using System.Threading.Tasks;
 
 namespace Geometri
 {
-    class Square
+    public class Square
     {
-        private int SquareLength() 
+        //instance var
+        private float squareLength;
+
+        //constructor
+        public Square(){}
+
+        public float SquareLength
         {
-            return 5;
+            get { return squareLength; }
+            set { squareLength = value; }
+        }
+
+        //SquareAreaCalc method
+        public float SquareAreaCalc()
+        {
+             float area = squareLength * 4;
+            return area;
         }
     }
 }

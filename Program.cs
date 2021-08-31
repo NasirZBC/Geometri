@@ -6,8 +6,12 @@ namespace Geometri
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Square squareOne = new Square();
+            squareOne.SquareLength = 5;
 
+            float test = squareOne.SquareAreaCalc();
+
+            Console.WriteLine(test);
 
         }
     }
